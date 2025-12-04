@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+
+
+
+  
+
+
+ body {
+ background-color: #000000; /* deep black background */
+      color: #ffffff; /* white text */
+      font-family: Arial, sans-serif;
+      text-align: center; 
+} 
+
+
+.class3{ text-align: center;
+border:  2px solid lightgray;}
+
+
+  
+  
+
+     header {
+      background-color: #1e1e1e;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+     
+    }
+
+    header h1 {
+      color: #9f5fff;
+      margin: 0;
+      font-size: 28px;
+    }
+
+     .search {
+      background: #2a2a2a;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 20px;
+      color: #fff;
+      width: 200px;
+      
+    }
+
+
+
+
+
+     .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+  margin: 0 auto;
+      padding: 40px;
+    }
+
+    .card {
+      background-color: #1e1e1e;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 10px #9f5fff30;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+
+    .card2 {
+      background-color: #1e1e1e;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 10px #9f5fff30;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+
+       color: #9f5fff;;
+    text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px #9f5fff90;
+    }
+
+    .card img {
+      width: 100%;
+      height: 80%;
+      display: block;
+        object-fit: cover;
+
+    }
+
+    .card-title a {
+      padding: 15px;
+      font-weight: bold;
+      color: #9f5fff;
+    }
+
+  a { user-select: none;}
+  body {user-select: none;}
+
+
+</style> 
+
+
+
+
+  <title>My lesson</title>
+</head>
+ <script>
+    // Запрет контекстного меню и Ctrl+C
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    document.addEventListener('keydown', e => {
+      if (e.ctrlKey && (e.key === 'c' || e.key === 'u' || e.key === 's')) {
+        e.preventDefault();
+      }
+    });
+
+  
+
+  </script>
+
+  <script>
+  // Запрет контекстного меню
+  document.addEventListener('contextmenu', e => e.preventDefault());
+
+  // Запрет выделения
+  document.addEventListener('selectstart', e => e.preventDefault());
+
+  // Запрет долгого нажатия
+  document.addEventListener('touchstart', e => {
+    if (e.touches.length > 1) {
+      e.preventDefault();
+    }
+  });
+</script>
+<body>
+
+   <header>
+    <h1>WebBuilders Lab: Әр оқушы — өзінің мини-инженері</h1>
+    <input type="text" class="search" placeholder="Search...">
+   
+  </header>
+
+
+
+   <h2><p class="card2" >Оқушылардың практикалық жұмысы</p> </h2>
+
+ 
+
+
+ <div class="container">
+
+
+
+  <div class="card">
+
+
+<img src="https://wifi.kz/upload/resize_cache/webp/medialibrary/086/1596200966181481.webp" alt="Пример" > 
+ <div class="card-title"> <a href=" https://tursynbekaruna8-web.github.io/ort-sondiretin-akyldy-dron/"> Өрт сөндіретін ақылды дрон </a> </div>
+ </div> 
+
+
+ <div class="card">
+
+
+<img src="https://www.rgo.ru/sites/default/files/styles/head_image_article/public/node/65181/photo-2023-10-30-165524.jpeg?itok=K5ck3FXD" alt="Пример" > 
+ <div class="card-title"> <a href=" https://tursynbekaruna8-web.github.io/mukhit-tazartu-sim-lyatsiyasy/"> Мұхит тазарту симуляциясы</a> </div>
+ </div> 
+
+
+  <div class="card"><img src="https://od24.info/uploads/posts/2024-09/1726044542_1685081992_webhostingservices001.jpg" alt="Пример" >
+  <div class="card-title"><a href="https://tursynbekaruna8-web.github.io/-AquaKaz-/"> AquaKaz Веб-Хостинг </a> </div> 
+</div>
+
+
+
+
+
+
+<div class="card" >
+      <img src="https://aqua-life.pl/wp-content/uploads/2021/03/Desalination-Module.jpg" alt="Пример" >
+
+<div class="card-title"> <a href="https://tursynbekaruna8-web.github.io/RO-module/"> RO - module</a>
+</div> </div>
+
+
+
+    <div class="card">  <img src="https://adhddirect.co.uk/wp-content/uploads/2024/05/adhd-direct-travellers-guide-traveling-with-adhd-1024x512.jpg" alt="Пример" >
+
+ <div class="card-title">  <a href="https://www.canva.com/design/DAGrQc5FQfc/KXKC3LJDElG8wNlrmnrEXA/edit?utm_content=DAGrQc5FQfc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton "> lesson - 4 (travelling = саяхат )</a> </div > </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+ 
+
+
+
+
+</body>
+</html>
